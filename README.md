@@ -18,13 +18,13 @@ This study asks three practical questions:
 
 ```mermaid
 flowchart LR
-    A[Dataset A<br/>Paddy Disease Classification] --> P
-    B[Dataset B<br/>Leaf Rice Disease Indonesia] --> P
-    P[Audit, label mapping,<br/>leakage check, 80/10/10 split] --> F
-    F[Frozen CNN features<br/>MobileNetV2 / EfficientNetB0<br/>224x224, GAP 1280-d] --> S[Linear SVM<br/>StandardScaler, class_weight=balanced]
-    S --> E[7 scenarios<br/>same-domain, cross-domain, combined-domain]
-    E --> D[Domain shift analysis<br/>image statistics, domain classifier,<br/>controls, misclassified images]
-    E --> K[Few-shot adaptation<br/>k = 0, 1, 2, 5, 10, 20 per class<br/>10 random seeds]
+    A["Dataset A: Paddy Disease Classification"] --> P
+    B["Dataset B: Leaf Rice Disease Indonesia"] --> P
+    P["Audit, label mapping, leakage check, 80/10/10 split"] --> F
+    F["Frozen CNN features: MobileNetV2 or EfficientNetB0 (224x224, GAP 1280-d)"] --> S["Linear SVM: StandardScaler, balanced class weights"]
+    S --> E["7 scenarios: same-domain, cross-domain, combined-domain"]
+    E --> D["Domain shift analysis: image statistics, domain classifier, controls, misclassified images"]
+    E --> K["Few-shot adaptation: k = 0, 1, 2, 5, 10, 20 per class, 10 random seeds"]
 ```
 
 - **Classes (3):** bacterial leaf blight, blast, tungro.
@@ -85,7 +85,7 @@ The datasets are **not included** (see their licences on Kaggle):
 
 If you use this work, please cite the manuscript (details will be added after publication):
 
-> Nadya. Arum. Pramesti, Ajeng. Pembayung. Kartika. Sari, and Ricardus. Anggi. Pramunendra, "Cross-Domain Generalization and Domain Adaptation for Rice Leaf Disease Classification."
+> N. A. Pramesti, A. P. K. Sari, and R. A. Pramunendra, "Cross-Domain Generalization and Domain Adaptation for Rice Leaf Disease Classification."
 
 ## 📬 Contact
 
