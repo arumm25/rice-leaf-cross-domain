@@ -85,7 +85,7 @@ The datasets are **not included** (see their licences on Kaggle):
 
 If you use this work, please cite the manuscript (details will be added after publication):
 
-> N. A. Pramesti, A. P. K. Sari, and R. A. Pramunendra, "Cross-Domain Generalization and Domain Adaptation for Rice Leaf Disease Classification."
+> Nadya Arum Pramesti, Ajeng Pembayung Kartika Sari, and Ricardus Anggi Pramunendra, "Cross-Domain Generalization and Domain Adaptation for Rice Leaf Disease Classification."
 
 ## 📬 Contact
 
